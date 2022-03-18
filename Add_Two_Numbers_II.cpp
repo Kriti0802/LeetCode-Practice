@@ -28,17 +28,17 @@ ListNode* reverse(ListNode* head){
            return prev;
  }
 void  Insertattail(ListNode* &head,ListNode* &tail,int val){
-    // ListNode* temp= new ListNode(val);
-    // if(head==NULL){
-    //         head=temp;
-    //         tail=temp;
-    //         return;
-    // }
-    // else{
-    //    tail->next=temp;
-    //     tail=temp;
+    ListNode* temp= new ListNode(val);
+    if(head==NULL){
+            head=temp;
+            tail=temp;
+            return;
+    }
+    else{
+       tail->next=temp;
+        tail=temp;
 
-    // }
+    }
 
 }
 
